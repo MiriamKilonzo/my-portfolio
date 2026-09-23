@@ -250,3 +250,25 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
+
+/* ── CURRENTLY BUILDING CARD ── */
+.current-card {
+  border-color: #c9a84c;
+  position: relative;
+}
+
+.current-card h3::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c9a84c;
+  margin-right: 8px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
